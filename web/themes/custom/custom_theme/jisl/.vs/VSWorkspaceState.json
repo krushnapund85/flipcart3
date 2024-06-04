@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\protected",
+    "\\protected\\extensions",
+    "\\protected\\modules\\user",
+    "\\protected\\modules\\user\\views",
+    "\\protected\\views"
+  ],
+  "SelectedNode": "\\protected\\extensions\\myAutoComplete.php",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,11 @@
+<?php
+
+ function custom_taxo_menu_demo_theme() {
+   return [
+    'custom_texo_menu_demo' => [
+      'variables' => [
+        'data' => [],
+      ]
+    ]
+   ];
+ }

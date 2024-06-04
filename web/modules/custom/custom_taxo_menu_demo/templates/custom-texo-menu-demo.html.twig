@@ -1,0 +1,31 @@
+<nav class="cus-texo-menu-demo-nav navbar navbar-expand-lg">
+ <div class="container-fluid">
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main_nav">
+  <ul class="navbar-nav">
+   {% for key,val in data %}
+       {%
+    set list_item_classes = [
+    'nav-item',
+    val.child|length > 0 ? 'dropdown'
+   ]
+   %}
+    
+      <li> 
+      <a class="nav-link cus-texo-menu-demo-nav-li" href="/">{{ val.term_name }}</a>
+      {% if val.child|length > 0 %}
+       <ul class="dropdown-menu">
+      {% for test in val.child %}
+         <li><a class="dropdown-item" href="/products/{{ val.term_name|lower }}/{{ test.term_name|lower  }}">{{ test.term_name }}</a></li>
+      {% endfor %} 
+      </li>
+     
+    </ul> 
+    {% endif %}
+   {% endfor %}
+  </ul>
+ </div> <!-- container-fluid.// -->
+ </div> <!-- navbar-collapse.// -->
+</nav>

@@ -1,0 +1,7 @@
+<ul class="list-group list-group-horizontal">
+{% for key,val in data %}
+<li ><img src={{ val.img | image_style('medium') }}>
+<a href="{{ val.tid }}" > 
+{{ val.term_name }} </a></li>
+{% endfor %}
+</ul>

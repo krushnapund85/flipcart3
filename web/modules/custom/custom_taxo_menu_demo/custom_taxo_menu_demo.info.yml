@@ -1,0 +1,7 @@
+name: custom_taxo_menu_demo
+core: 8.x
+type: module
+description: this module provides taxonomy term menu demo
+package: custom
+core_version_requirement: ^8 || ^9
+
