@@ -507,10 +507,6 @@ class ComposerStaticInit97e7f507b825709f0ea58adfa29f08d5
         ),
     );
 
-    public static $fallbackDirsPsr0 = array (
-        0 => __DIR__ . '/..' . '/pear/pear-core-minimal/src',
-    );
-
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
@@ -540,9 +536,14 @@ class ComposerStaticInit97e7f507b825709f0ea58adfa29f08d5
         'Drupal\\Core\\Site\\Settings' => __DIR__ . '/../..' . '/web/core/lib/Drupal/Core/Site/Settings.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
+        'OS_Guess' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/OS/Guess.php',
+        'PEAR' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR.php',
+        'PEAR_Error' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR.php',
+        'PEAR_ErrorStack' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR/ErrorStack.php',
         'PEAR_Exception' => __DIR__ . '/..' . '/pear/pear_exception/PEAR/Exception.php',
         'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
+        'System' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/System.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     );
@@ -553,7 +554,6 @@ class ComposerStaticInit97e7f507b825709f0ea58adfa29f08d5
             $loader->prefixLengthsPsr4 = ComposerStaticInit97e7f507b825709f0ea58adfa29f08d5::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit97e7f507b825709f0ea58adfa29f08d5::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit97e7f507b825709f0ea58adfa29f08d5::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInit97e7f507b825709f0ea58adfa29f08d5::$fallbackDirsPsr0;
             $loader->classMap = ComposerStaticInit97e7f507b825709f0ea58adfa29f08d5::$classMap;
 
         }, null, ClassLoader::class);
